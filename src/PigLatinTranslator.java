@@ -31,6 +31,21 @@ public class PigLatinTranslator
 
     // Replace this code to correctly translate a single word.
     // Start here first!
+    String secondWord = input.substring(1,2);
+    int restofWord = input.length();
+    String checkSpace = input.substring(0,1);
+    if (input.equals(null)) {
+      System.out.println("translateWord: '" + null + "'");
+    }
+    else if (secondWord.equals("a") || secondWord.equals("i") || secondWord.equals("o") || secondWord.equals("e") || secondWord.equals("u")) {
+      input = input.substring(1, restofWord) + input.substring(0,1) + "ay";
+    } else {
+      input = input.substring(2, restofWord) + input.substring(0,2) + "ay";
+    }
+    String result = input;
+    System.out.println("translateWord: '" + input + "'");
+    return result;
+  }
     String result = input;
     
     return result;
