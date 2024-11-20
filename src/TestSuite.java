@@ -8,8 +8,7 @@ public class TestSuite
         pass &= basicTest("null", "ullnay");
 
         // Test that empty strings don't crash.
-        pass &= basicTest("","");
-        pass &= basicTest("    ", "    ");
+        
 
         // Vowel first letter
         pass &= basicTest("eat", "eatay");
@@ -32,6 +31,8 @@ public class TestSuite
         pass &= basicTest("Trash.", "Ashtray.");
         pass &= basicTest("clean-cut", "eanclay-utcay");
 
+        pass &= basicTest("","");
+        pass &= basicTest("    ", "    ");
         if (pass == true)
         {
             System.out.println("--- TEST PASSED! Congrats! ---");

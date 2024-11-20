@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PigLatinTranslator",
+            "request": "launch",
+            "mainClass": "PigLatinTranslator",
+            "projectName": "Aryana-Pig-Latin_435d6da6"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Aryana-Pig-Latin_435d6da6"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
