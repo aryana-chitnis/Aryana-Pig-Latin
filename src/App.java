@@ -25,6 +25,7 @@ public class App {
 
         // Starter book
         Book input = new Book();
+        Book inputTwo = new Book();
 
         // Start with a "test" book based on a string.
         // Get this to work, and all the tests to pass first.
@@ -36,9 +37,9 @@ public class App {
         Book output = PigLatinTranslator.translate(input);
         output.printlines(0,103);
 
-        input.readFromUrl("The Legend of Sleepy Hollow", "https://www.gutenberg.org/cache/epub/41/pg41.txt");
-        input.printlines(0,103);
-        Book outputTwo = PigLatinTranslator.translate(input);
+        inputTwo.readFromUrl("The Legend of Sleepy Hollow", "https://www.gutenberg.org/cache/epub/41/pg41.txt");
+        inputTwo.printlines(0,103);
+        Book outputTwo = PigLatinTranslator.translate(inputTwo);
         outputTwo.printlines(0,103);
         output.writeToFile();
     }
