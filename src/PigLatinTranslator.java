@@ -223,7 +223,7 @@ public class PigLatinTranslator {
                     "The cautious old gentleman knit his brows tenfold closer after this explanation, being sorely puzzled by the ratiocination of the syllogism, while, methought, the one in pepper-and-salt eyed him with something of a triumphant leer. At length he observed that all this was very well, but still he thought the story a little on the extravagant—there were one or two points on which he had his doubts.\n" + //
                     "\n" + //
                     "“Faith, sir,” replied the story-teller, “as to that matter, I don’t believe one-half of it myself.” D. K.");
-
+        book.appendLine("eat" + "\n" + "pig" + "\n" + "trash" + "\n" + "pigs eat trash" + "\n" + "Trash" + "\n" + "TrAsH" + "\n" + "\n" + "clean-cut");
       Book translatedBook = translate(book);
       translatedBook.printlines(0, translatedBook.getLineCount());
   }
