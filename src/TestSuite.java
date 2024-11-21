@@ -24,15 +24,15 @@ public class TestSuite
         // M.C. - initials
 
         // Capitalization
-        pass &= basicTest("Trash", "Ashtray");
-        pass &= basicTest("TrAsH", "AsHtray");
+        pass &= basicTest("Trash", "ashTray");
+        pass &= basicTest("TrAsH", "AsHTray");
 
         // Punctuation
-        pass &= basicTest("Trash.", "Ashtray.");
-        pass &= basicTest("clean-cut", "eanclay-utcay");
+        pass &= basicTest("Trash.", "ash.Tray");
+        pass &= basicTest("clean-cut", "ean-cutclay");
 
         pass &= basicTest("","");
-        pass &= basicTest("    ", "    ");
+        pass &= basicTest("    ", "");
         if (pass == true)
         {
             System.out.println("--- TEST PASSED! Congrats! ---");

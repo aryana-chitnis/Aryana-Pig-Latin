@@ -42,7 +42,7 @@ public class PigLatinTranslator {
       char first = input.charAt(0);
 
       if (vowels.indexOf(first) != -1) {
-          return input + "way";
+          return input + "ay";
       }
 
       int firstVowelIndex = -1;
